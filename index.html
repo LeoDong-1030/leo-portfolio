@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Leo is a computer engineer creating playful, thoughtful experiences through code and design."
+    />
+    <title>Leo — Creative Coding & Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Leo, back to top">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>Leo.</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </nav>
+
+      <a class="status-pill" href="#projects">
+        <span class="status-dot" aria-hidden="true"></span>
+        Building now
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span>01</span> Hello, world</p>
+          <h1 id="hero-title">
+            I make ideas<br />
+            <span class="scribble-wrap">click.</span>
+          </h1>
+          <p class="hero-intro">
+            I’m <strong>Leo</strong>, a computer engineer exploring the playful
+            space where creative coding meets thoughtful design.
+          </p>
+          <a class="button" href="#about">
+            Take a look around
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Interactive creative coding illustration">
+          <div class="code-window">
+            <div class="window-bar">
+              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>leo_playground.js</span>
+              <span>⌘</span>
+            </div>
+            <div class="canvas" id="creative-canvas">
+              <span class="shape shape-circle"></span>
+              <span class="shape shape-square"></span>
+              <span class="shape shape-pill"></span>
+              <span class="shape shape-ring"></span>
+              <div class="canvas-label">
+                <span>MOVE YOUR CURSOR</span>
+                <strong>code + curiosity</strong>
+              </div>
+              <div class="cursor-bubble" aria-hidden="true">✦</div>
+            </div>
+            <div class="code-line" aria-hidden="true">
+              <span>01</span><code><b>const</b> idea = curiosity + play;</code>
+            </div>
+            <div class="code-line" aria-hidden="true">
+              <span>02</span><code>idea.<em>makeItReal</em>();</code>
+            </div>
+          </div>
+          <span class="float-tag tag-one">COMPUTER ENGINEER</span>
+          <span class="float-tag tag-two">CREATIVE CODER</span>
+          <span class="spark spark-one" aria-hidden="true">✦</span>
+          <span class="spark spark-two" aria-hidden="true">✦</span>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Areas of interest">
+        <div class="marquee-track">
+          <span>Creative coding</span><i>✦</i><span>Interaction design</span><i>✦</i>
+          <span>Computer engineering</span><i>✦</i><span>Curious experiments</span><i>✦</i>
+          <span>Creative coding</span><i>✦</i><span>Interaction design</span><i>✦</i>
+          <span>Computer engineering</span><i>✦</i><span>Curious experiments</span><i>✦</i>
+        </div>
+      </section>
+
+      <section class="about section-shell" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span>02</span> About me</p>
+          <h2 id="about-title">Engineer brain.<br /><em>Designer heart.</em></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card intro-card reveal">
+            <span class="card-icon" aria-hidden="true">↗</span>
+            <p>
+              My name is Leo. I’m a computer engineer who loves using code as a
+              creative material—not only to solve problems, but to make things
+              that feel surprising, intuitive, and alive.
+            </p>
+            <p>
+              I’m currently building my practice, experimenting with new ideas,
+              and shaping the first projects that will live here.
+            </p>
+          </div>
+          <div class="about-card principle-card reveal">
+            <span class="mini-label">CURRENT QUESTION</span>
+            <blockquote>“What happens if I try it?”</blockquote>
+            <div class="orbit" aria-hidden="true"><span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span>03</span> Experience</p>
+          <h2 id="experience-title">The journey<br /><em>so far.</em></h2>
+        </div>
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <div class="timeline-marker"><span></span></div>
+            <div class="timeline-meta">
+              <span class="mini-label">RIGHT NOW</span>
+              <h3>Building & experimenting</h3>
+            </div>
+            <p>
+              Developing my creative coding practice, learning in public, and
+              turning small experiments into thoughtful digital work.
+            </p>
+          </article>
+          <article class="timeline-item muted-item">
+            <div class="timeline-marker"><span></span></div>
+            <div class="timeline-meta">
+              <span class="mini-label">NEXT UP</span>
+              <h3>More chapters incoming</h3>
+            </div>
+            <p>This timeline is just getting started. Check back soon.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section-shell" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span>04</span> Skills & interests</p>
+          <h2 id="skills-title">Things I like<br /><em>to make with.</em></h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card reveal">
+            <span class="skill-number">01</span>
+            <div class="skill-symbol" aria-hidden="true">&lt;/&gt;</div>
+            <h3>Code</h3>
+            <p>Building reliable systems and playful digital experiments.</p>
+          </article>
+          <article class="skill-card featured reveal">
+            <span class="skill-number">02</span>
+            <div class="skill-symbol" aria-hidden="true">✦</div>
+            <h3>Creative coding</h3>
+            <p>Using algorithms, motion, and interaction as a creative medium.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-number">03</span>
+            <div class="skill-symbol" aria-hidden="true">◒</div>
+            <h3>Design</h3>
+            <p>Shaping clear, useful experiences with personality.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-number">04</span>
+            <div class="skill-symbol" aria-hidden="true">⚙</div>
+            <h3>Engineering</h3>
+            <p>Understanding how ideas work all the way down.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section-shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span>05</span> Selected projects</p>
+          <h2 id="projects-title">Good things are<br /><em>in the works.</em></h2>
+        </div>
+        <div class="project-lab reveal">
+          <div class="lab-visual" aria-hidden="true">
+            <div class="blueprint-grid"></div>
+            <span class="project-shape ps-one">L</span>
+            <span class="project-shape ps-two">01</span>
+            <span class="project-shape ps-three">↗</span>
+            <svg viewBox="0 0 420 260" role="presentation">
+              <path d="M35 187 C95 46 146 240 218 110 S330 40 388 142" />
+            </svg>
+          </div>
+          <div class="lab-copy">
+            <span class="mini-label">WORK IN PROGRESS</span>
+            <h3>The first project is cooking.</h3>
+            <p>
+              I’m exploring, prototyping, and making plenty of happy mistakes.
+              This space will soon hold a collection of creative coding work.
+            </p>
+            <div class="progress-label"><span>PROGRESS</span><strong>37%</strong></div>
+            <div class="progress-track"><span></span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-mark">L<span>✦</span></div>
+      <p>Designed & built by Leo</p>
+      <p>Still curious · <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
