@@ -165,14 +165,19 @@ blockquote { position: relative; margin: 40px 0 0; z-index: 2; font-family: Geor
 .skill-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
 .skill-card { position: relative; min-height: 320px; padding: 25px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: white; border: 1px solid var(--line); border-radius: 7px; transition: transform .3s, box-shadow .3s; }
 .skill-card:hover { transform: translateY(-8px) rotate(-1deg); box-shadow: 10px 12px 0 var(--sky); }
+.skill-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
 .skill-card.featured { color: white; background: var(--blue); transform: rotate(1.5deg); }
 .skill-card.featured:hover { transform: rotate(0) translateY(-8px); box-shadow: 10px 12px 0 #aacbff; }
 .skill-number { position: absolute; top: 22px; left: 24px; font: 500 9px var(--mono); opacity: .6; }
 .skill-symbol { position: absolute; top: 46px; right: 28px; font: 500 48px var(--mono); color: var(--blue); }
 .featured .skill-symbol { color: #ffdc5e; }
 .skill-card h3 { margin-bottom: 12px; font-size: 24px; letter-spacing: -.04em; }
-.skill-card p { margin: 0; color: #60708b; font-size: 13px; line-height: 1.6; }
+.skill-card p { margin: 0 0 24px; color: #60708b; font-size: 13px; line-height: 1.6; }
 .featured p { color: rgba(255,255,255,.75); }
+.skill-link-hint { display: flex; align-items: center; justify-content: space-between; padding-top: 15px; border-top: 1px solid var(--line); font: 500 9px var(--mono); letter-spacing: .12em; }
+.skill-link-hint b { font-size: 16px; transition: transform .25s ease; }
+.skill-card:hover .skill-link-hint b { transform: translate(3px, -3px); }
+.featured .skill-link-hint { border-color: rgba(255,255,255,.25); }
 
 .project-lab { display: grid; grid-template-columns: 1.25fr .75fr; overflow: hidden; border: 1px solid var(--ink); border-radius: 8px; box-shadow: 12px 12px 0 var(--sky); }
 .lab-visual { position: relative; min-height: 450px; overflow: hidden; background: var(--blue); }
