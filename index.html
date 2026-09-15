@@ -18,6 +18,13 @@
   </head>
   <body>
     <div class="page-noise" aria-hidden="true"></div>
+    <aside class="topic-sidebar" aria-label="Explore topics">
+      <button class="topic-toggle" type="button" aria-expanded="false" aria-controls="topic-menu" aria-label="Open topic navigation"><span>→</span></button>
+      <div class="topic-menu" id="topic-menu">
+        <p class="topic-menu-label">Explore Leo</p>
+        <a href="#about">About Leo</a><a href="#personality">Personality</a><a href="code.html">Code</a><a href="creative-coding.html">Creative coding</a><a href="design.html">Design</a><a href="engineering.html">Engineering</a><a href="#personality">Games & sports</a><a href="#personality">School & activities</a><a href="#projects">Current experiments</a><a href="#experience">Future goals</a>
+      </div>
+    </aside>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Leo, back to top">
         <span class="brand-mark" aria-hidden="true">L</span>
@@ -26,6 +33,7 @@
 
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
+        <a href="#personality">Personality</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -122,62 +130,126 @@
         </div>
       </section>
 
+      <section class="personality section-shell" id="personality" aria-labelledby="personality-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span>03</span> The human behind the pixels</p>
+          <h2 id="personality-title">A little playful.<br /><em>A lot curious.</em></h2>
+        </div>
+        <div class="personality-layout">
+          <div class="personality-collage reveal" aria-label="A playful collage about Leo">
+            <span class="sticker sticker-smile">HI! ✦</span>
+            <span class="sticker sticker-game">PLAYER<br />1</span>
+            <span class="sticker sticker-ball" aria-hidden="true">●</span>
+            <span class="sticker sticker-wave">~ ~ ~</span>
+            <div class="personality-note">
+              <span class="mini-label">CURRENT MODE</span>
+              <strong>Try it.<br />Learn from it.<br />Try again.</strong>
+            </div>
+          </div>
+          <div class="personality-conversation reveal">
+            <p class="conversation-kicker">Want to know me beyond the résumé?</p>
+            <p class="conversation-prompt" id="personality-prompt">Pick a question and I’ll give you a clue.</p>
+            <div class="question-list" role="group" aria-label="Questions about Leo">
+              <button type="button" data-answer="Funny enough to make the hard parts feel lighter—and kind enough to make room for other people’s ideas.">What am I like to work with?</button>
+              <button type="button" data-answer="Somewhere between a focused solo quest and a good team game. I like making things together, then recharging with a game or a swim.">What is my ideal balance?</button>
+              <button type="button" data-answer="I’m curious about trying new sports, joining activities at school, and seeing what unexpected skills show up along the way.">What am I curious about next?</button>
+            </div>
+            <p class="conversation-answer" id="personality-answer" aria-live="polite">Choose one above <span>↗</span></p>
+          </div>
+        </div>
+      </section>
+
       <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
         <div class="section-heading reveal">
-          <p class="eyebrow"><span>03</span> Experience</p>
-          <h2 id="experience-title">The journey<br /><em>so far.</em></h2>
+          <p class="eyebrow"><span>04</span> Experience</p>
+          <h2 id="experience-title">My coding<br /><em>journey.</em></h2>
         </div>
         <div class="timeline reveal">
           <article class="timeline-item">
             <div class="timeline-marker"><span></span></div>
             <div class="timeline-meta">
-              <span class="mini-label">RIGHT NOW</span>
-              <h3>Building & experimenting</h3>
+              <span class="mini-label">HOW IT STARTED</span>
+              <h3>Games in fourth grade</h3>
             </div>
             <p>
-              Developing my creative coding practice, learning in public, and
-              turning small experiments into thoughtful digital work.
+              I first became interested in coding in fourth grade because I wanted to make my own games. That curiosity is still at the center of how I learn.
             </p>
           </article>
           <article class="timeline-item muted-item">
             <div class="timeline-marker"><span></span></div>
             <div class="timeline-meta">
-              <span class="mini-label">NEXT UP</span>
-              <h3>More chapters incoming</h3>
+              <span class="mini-label">WHAT I’VE BUILT</span>
+              <h3>From scripts to a published obby</h3>
             </div>
-            <p>This timeline is just getting started. Check back soon.</p>
+            <p>I’ve used JavaScript, Python, and other coding platforms to experiment and build. I also published my own Roblox obby game.</p>
           </article>
+          <article class="timeline-item muted-item">
+            <div class="timeline-marker"><span></span></div>
+            <div class="timeline-meta">
+              <span class="mini-label">HOW I WORK</span>
+              <h3>Keep solving forward</h3>
+            </div>
+            <p>When one idea needs many scripts to work, I break the problem down and keep testing. I enjoy both teamwork and focused solo building.</p>
+          </article>
+        </div>
+        <div class="experience-feature reveal">
+          <div class="experience-feature-intro">
+            <span class="mini-label">THE BIGGER PICTURE</span>
+            <h3>Four parts of<br /><em>my process.</em></h3>
+          </div>
+          <div class="experience-feature-grid">
+            <article>
+              <span class="feature-number">01</span>
+              <h4>Where it started</h4>
+              <p>My first game was a turret shooter where players had to dodge bullets to survive.</p>
+            </article>
+            <article>
+              <span class="feature-number">02</span>
+              <h4>Why I build</h4>
+              <p>I love the process of creating different structures and turning creative ideas into something playable.</p>
+            </article>
+            <article>
+              <span class="feature-number">03</span>
+              <h4>How I learn</h4>
+              <p>When I get stuck, I ask a teacher for help or search online until I understand the problem.</p>
+            </article>
+            <article>
+              <span class="feature-number">04</span>
+              <h4>What’s next</h4>
+              <p>I want to make a bigger, more popular Roblox obby that people enjoy exploring.</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="skills section-shell" id="skills" aria-labelledby="skills-title">
         <div class="section-heading reveal">
-          <p class="eyebrow"><span>04</span> Skills & interests</p>
+          <p class="eyebrow"><span>05</span> Skills & interests</p>
           <h2 id="skills-title">Things I like<br /><em>to make with.</em></h2>
         </div>
         <div class="skill-grid">
-          <a class="skill-card reveal" href="code.html" aria-label="Learn more about Code">
+          <a class="skill-card reveal" data-topic="code" href="code.html" aria-label="Learn more about Code">
             <span class="skill-number">01</span>
             <div class="skill-symbol" aria-hidden="true">&lt;/&gt;</div>
             <h3>Code</h3>
             <p>Building reliable systems and playful digital experiments.</p>
             <span class="skill-link-hint">EXPLORE <b>↗</b></span>
           </a>
-          <a class="skill-card featured reveal" href="creative-coding.html" aria-label="Learn more about Creative Coding">
+          <a class="skill-card reveal" data-topic="creative-coding" href="creative-coding.html" aria-label="Learn more about Creative Coding">
             <span class="skill-number">02</span>
             <div class="skill-symbol" aria-hidden="true">✦</div>
             <h3>Creative coding</h3>
             <p>Using algorithms, motion, and interaction as a creative medium.</p>
             <span class="skill-link-hint">EXPLORE <b>↗</b></span>
           </a>
-          <a class="skill-card reveal" href="design.html" aria-label="Learn more about Design">
+          <a class="skill-card reveal" data-topic="design" href="design.html" aria-label="Learn more about Design">
             <span class="skill-number">03</span>
             <div class="skill-symbol" aria-hidden="true">◒</div>
             <h3>Design</h3>
             <p>Shaping clear, useful experiences with personality.</p>
             <span class="skill-link-hint">EXPLORE <b>↗</b></span>
           </a>
-          <a class="skill-card reveal" href="engineering.html" aria-label="Learn more about Engineering">
+          <a class="skill-card reveal" data-topic="engineering" href="engineering.html" aria-label="Learn more about Engineering">
             <span class="skill-number">04</span>
             <div class="skill-symbol" aria-hidden="true">⚙</div>
             <h3>Engineering</h3>
@@ -189,7 +261,7 @@
 
       <section class="projects section-shell" id="projects" aria-labelledby="projects-title">
         <div class="section-heading reveal">
-          <p class="eyebrow"><span>05</span> Selected projects</p>
+          <p class="eyebrow"><span>06</span> Selected projects</p>
           <h2 id="projects-title">Good things are<br /><em>in the works.</em></h2>
         </div>
         <div class="project-lab reveal">

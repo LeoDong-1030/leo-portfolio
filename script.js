@@ -34,3 +34,39 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
 document.querySelector("#year").textContent = new Date().getFullYear();
+
+const skillCards = document.querySelectorAll(".skill-card[data-topic]");
+const currentTopic = document.body.dataset.topic || new URL(document.referrer || window.location.href).pathname.match(/(code|creative-coding|design|engineering)/)?.[1];
+
+skillCards.forEach((card) => {
+  card.classList.toggle("featured", card.dataset.topic === currentTopic);
+});
+
+const topicSidebar = document.querySelector(".topic-sidebar");
+const topicToggle = document.querySelector(".topic-toggle");
+
+if (topicSidebar && topicToggle) {
+  topicToggle.addEventListener("click", () => {
+    const isOpen = topicSidebar.classList.toggle("is-open");
+    topicToggle.setAttribute("aria-expanded", String(isOpen));
+    topicToggle.setAttribute("aria-label", isOpen ? "Close topic navigation" : "Open topic navigation");
+  });
+
+  topicSidebar.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      topicSidebar.classList.remove("is-open");
+      topicToggle.setAttribute("aria-expanded", "false");
+      topicToggle.setAttribute("aria-label", "Open topic navigation");
+    });
+  });
+}
+
+const personalityPrompt = document.querySelector("#personality-prompt");
+const personalityAnswer = document.querySelector("#personality-answer");
+
+document.querySelectorAll("[data-answer]").forEach((question) => {
+  question.addEventListener("click", () => {
+    personalityPrompt.textContent = question.textContent;
+    personalityAnswer.innerHTML = `${question.dataset.answer} <span>↗</span>`;
+  });
+});

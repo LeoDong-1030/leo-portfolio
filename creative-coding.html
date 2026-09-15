@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="subject.css" />
   </head>
-  <body class="subject-page creative">
+  <body class="subject-page creative" data-topic="creative-coding">
     <div class="page-noise" aria-hidden="true"></div>
+    <aside class="topic-sidebar" aria-label="Explore topics">
+      <button class="topic-toggle" type="button" aria-expanded="false" aria-controls="topic-menu" aria-label="Open topic navigation"><span>→</span></button>
+      <div class="topic-menu" id="topic-menu"><p class="topic-menu-label">Explore Leo</p><a href="index.html#about">About Leo</a><a href="index.html#personality">Personality</a><a href="code.html">Code</a><a href="creative-coding.html">Creative coding</a><a href="design.html">Design</a><a href="engineering.html">Engineering</a><a href="index.html#personality">Games & sports</a><a href="index.html#personality">School & activities</a><a href="index.html#projects">Current experiments</a><a href="index.html#experience">Future goals</a></div>
+    </aside>
     <header class="subject-header">
       <a class="brand" href="index.html" aria-label="Leo, return home"><span class="brand-mark">L</span><span>Leo.</span></a>
       <nav class="topic-nav" aria-label="Subject navigation">
@@ -47,6 +51,15 @@
             <article class="explore-card"><span class="mini-label">02 / MOVEMENT</span><div><h3>Motion with meaning</h3><p>Animation that explains, delights, and gives an interface rhythm.</p></div></article>
             <article class="explore-card"><span class="mini-label">03 / PLAY</span><div><h3>Responsive moments</h3><p>Experiences that change when a person moves, clicks, or explores.</p></div></article>
           </div>
+        </div>
+      </section>
+      <section class="skills subject-skills" aria-labelledby="subject-skills-title">
+        <div class="section-heading reveal"><p class="eyebrow"><span>EXPLORE</span> More of Leo</p><h2 id="subject-skills-title">Things I like<br /><em>to make with.</em></h2></div>
+        <div class="skill-grid">
+          <a class="skill-card reveal" data-topic="code" href="code.html" aria-label="Learn more about Code"><span class="skill-number">01</span><div class="skill-symbol" aria-hidden="true">&lt;/&gt;</div><h3>Code</h3><p>Building reliable systems and playful digital experiments.</p><span class="skill-link-hint">EXPLORE <b>↗</b></span></a>
+          <a class="skill-card reveal" data-topic="creative-coding" href="creative-coding.html" aria-label="Learn more about Creative Coding"><span class="skill-number">02</span><div class="skill-symbol" aria-hidden="true">✦</div><h3>Creative coding</h3><p>Using algorithms, motion, and interaction as a creative medium.</p><span class="skill-link-hint">EXPLORE <b>↗</b></span></a>
+          <a class="skill-card reveal" data-topic="design" href="design.html" aria-label="Learn more about Design"><span class="skill-number">03</span><div class="skill-symbol" aria-hidden="true">◒</div><h3>Design</h3><p>Shaping clear, useful experiences with personality.</p><span class="skill-link-hint">EXPLORE <b>↗</b></span></a>
+          <a class="skill-card reveal" data-topic="engineering" href="engineering.html" aria-label="Learn more about Engineering"><span class="skill-number">04</span><div class="skill-symbol" aria-hidden="true">⚙</div><h3>Engineering</h3><p>Understanding how ideas work all the way down.</p><span class="skill-link-hint">EXPLORE <b>↗</b></span></a>
         </div>
       </section>
       <section class="subject-cta reveal"><h2>See where play<br />meets the rest.</h2><a class="button" href="index.html#skills">Explore all skills <span>↗</span></a></section>
