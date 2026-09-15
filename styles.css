@@ -149,7 +149,8 @@ h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400; }
 
 .about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; }
 .about-card { position: relative; min-height: 350px; padding: 48px; border: 1px solid var(--line); border-radius: 8px; }
-.intro-card { background: var(--pale); }
+.intro-card { padding-right: 220px; background: var(--pale); }
+.about-avatar { position: absolute; right: 30px; bottom: 30px; width: 155px; height: 155px; object-fit: cover; object-position: center; border: 6px solid white; border-radius: 50%; box-shadow: 7px 8px 0 var(--blue); transform: rotate(4deg); }
 .intro-card p { max-width: 660px; font-size: clamp(18px, 2.15vw, 27px); line-height: 1.5; letter-spacing: -.025em; }
 .intro-card p:last-child { margin-bottom: 0; color: #60708b; font-size: 15px; letter-spacing: 0; }
 .card-icon { position: absolute; right: 26px; top: 26px; display: grid; place-items: center; width: 38px; height: 38px; color: white; background: var(--blue); border-radius: 50%; }
@@ -285,6 +286,8 @@ footer p:last-child { text-align: right; opacity: .62; }
   .float-tag, .spark { display: none; }
   .about, .personality, .experience, .skills, .projects { padding-block: 100px; }
   .about-card { min-height: 320px; padding: 34px 28px; }
+  .intro-card { padding-right: 28px; padding-bottom: 160px; }
+  .about-avatar { right: 28px; bottom: 28px; width: 112px; height: 112px; }
   .personality-layout { grid-template-columns: 1fr; }
   .personality-collage, .personality-conversation { min-height: 340px; }
   .personality-conversation { padding: 34px 28px; }
